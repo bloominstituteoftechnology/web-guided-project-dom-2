@@ -1,5 +1,5 @@
 {
-  "name": "dom2",
+  "name": "web-guided-project-dom-2",
   "version": "1.0.0",
   "scripts": {
     "start": "parcel index.html"
