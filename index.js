@@ -1,11 +1,12 @@
 console.log('project is up')
 
-// 👉 TASK 1- Create a function called 'get'
-// that takes a CSS selector as its argument
-// and executes document.querySelector with the argument.
+// 👉 TASK 1- Demo handling click events on button#launchButton, using:
+//      - HTML
+//      - The DOM's element.onclick
+//      - element.addEventListener()
 
 
-// 👉 TASK 2- Using 'get', select the following elements from the DOM:
+// 👉 TASK 2- Select the following elements from the DOM:
 
 // BUTTONS
 const launchButton = null
