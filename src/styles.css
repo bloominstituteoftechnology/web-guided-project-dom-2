@@ -47,3 +47,7 @@ button {
 .off {
   display: none;
 }
+
+nav {
+  margin-bottom: 20px;
+}
