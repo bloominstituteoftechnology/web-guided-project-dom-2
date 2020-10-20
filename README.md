@@ -10,4 +10,4 @@
 
 **Please, do NOT run the project using `live-server`, or VSCode extensions, or however you were doing it in the past, before attempting the previous steps!**
 
-If we can't get get `npm install` and `npm start` working, we are still able to follow the guided project, but we won't be able to compile this afternoon's project. We need Node and NPM working correctly.
+If we can't get get `npm install` and `npm start` working, we are still able to follow the guided project, but we won't be able to compile this afternoon's project. Use the help channel to get Node and NPM working correctly.
