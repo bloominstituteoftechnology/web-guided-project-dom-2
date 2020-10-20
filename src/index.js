@@ -2,23 +2,23 @@ console.log('project is up')
 
 // 👉 TASK 1- Select the following elements from the DOM:
 
-// BUTTONS
+// A- BUTTONS
 const launchButton = null
 const confirmButton = null
 const cancelButton = null
 
-// MESSAGES
+// B- MESSAGES
 const successMessage = null
 const failureMessage = null
 
-// MODAL
+// C- MODAL
 const modal = null
 
 
 // 👉 TASK 2- Demo handling click events on button#launchButton, using:
-//      - HTML
-//      - The DOM's element.onclick
-//      - element.addEventListener()
+//  A- HTML inside index.html
+//  B- The DOM's element.onclick attribute
+//  C- element.addEventListener('click', callback)
 
 
 // 👉 TASK 3- Create a function that launches!
@@ -47,15 +47,8 @@ const modal = null
 // Play with stopPropagation and stopImmediatePropagation.
 
 
-// 👉 TASK 8- Select a link and prevent its default behavior
-
-
-// 👉 TASK 9- Using the mouseover event on 'document',
-// log to the console the X and Y coordinates
-// of the mouse pointer, as it moves over the screen.
-
-
-// 👉 TASK 10- [STRETCH] Create helper functions
+// 👉 TASK 8- [STRETCH] Create helper functions to make the code
+// more readable in tasks 3, 4, 5, 6
 function openModal() {
 
 }
@@ -67,3 +60,8 @@ function closeModal() {
 function killReports() {
 
 }
+
+
+// 👉 TASK 9- [STRETCH] Using the mouseover event on 'document',
+// log to the console the X and Y coordinates
+// of the mouse pointer, as it moves over the screen.

@@ -5,17 +5,12 @@
     "start": "parcel src/index.html"
   },
   "devDependencies": {
-    "eslint": "^7.10.0",
+    "eslint": "^7.11.0",
     "parcel-bundler": "^1.12.4"
   },
-  "dependencies": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/LambdaSchool/web-guided-project-dom-2.git"
   },
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/LambdaSchool/web-guided-project-dom-2/issues"
-  },
-  "homepage": "https://github.com/LambdaSchool/web-guided-project-dom-2#readme"
+  "license": "ISC"
 }
