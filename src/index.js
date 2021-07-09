@@ -3,23 +3,41 @@ console.log('project is up')
 // 👉 TASK 1- Select the following elements from the DOM:
 
 // A- BUTTONS
-const launchButton = null
-const confirmButton = null
-const cancelButton = null
+const launchButton = document.querySelector("#launchButton"); 
+const confirmButton = document.querySelector('#confirmButton')
+const cancelButton = document.querySelector('#cancelButton');
 
 // B- MESSAGES
-const successMessage = null
-const failureMessage = null
+const successMessage = document.querySelector('.success')
+const failureMessage = document.querySelector('.failure')
 
 // C- MODAL
-const modal = null
+const modal = document.querySelector('.modal')
 
 
 // 👉 TASK 2- Demo handling click events on button#launchButton, using:
 //  A- HTML inside index.html
 //  B- The DOM's element.onclick attribute
+// launchButton.onclick = function (event) {
+// 	console.log('a better way to handle events!')
+// }
+// // launchButton.onmouseover = 
 //  C- element.addEventListener('click', callback)
 
+// launchButton.addEventListener('click', function(event) {
+// 	console.log('the best way to handle events!')
+// })
+// launchButton.addEventListener('click', e => {
+// 	alert('this is better')
+//     });
+
+document.addEventListener('click', function(event) {
+	if (event.target === launchButton) {
+		console.log('I AM THE LAUNCH BUTTON')
+	} else {
+	        console.log("I listen on the document")
+	}
+})
 
 // 👉 TASK 3- Create a function that launches!
 // It should open the confirmation modal.
