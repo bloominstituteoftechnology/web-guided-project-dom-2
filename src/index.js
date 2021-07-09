@@ -43,15 +43,28 @@ document.addEventListener('click', function(event) {
 // It should open the confirmation modal.
 // Add it as an event listener for click events on the launch button.
 
+launchButton.addEventListener('click', function(event) {
+	modal.classList.remove('off') // a handy knob to flip, from the DOM
+	successMessage.classList.add('off')
+	failureMessage.classList.add('off')
+})
+
 
 // 👉 TASK 4- Create a function to confirm the launch.
 // It should close the modal and display a success report.
 // Add it as a listener for clicks on the confirmation button.
-
+confirmButton.addEventListener('click', function(event) {
+	modal.classList.add('off') // make modal invisible again
+	successMessage.classList.remove('off')
+})
 
 // 👉 TASK 5- Create a function to cancel the launch.
 // It should close the modal and display a failure report.
 // Add it as a listener for clicks on the cancellation button.
+cancelButton.addEventListener('click', event => {
+	modal.classList.add('off');
+	failureMessage.classList.remove('off');
+    })
 
 
 // 👉 TASK 6- Create a function that closes the modal if
