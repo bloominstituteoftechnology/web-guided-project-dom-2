@@ -34,6 +34,8 @@ launchButton.addEventListener("click", function(event) {
 // Add it as an event listener for click events on the launch button.
 function launch() {
   modal.classList.remove("off");
+  failureMessage.classList.add("off");
+  successMessage.classList.add("off");
 }
 launchButton.addEventListener("click", launch);
 
@@ -43,7 +45,6 @@ launchButton.addEventListener("click", launch);
 function confirm() {
   modal.classList.add("off");
   successMessage.classList.remove("off");
-  failureMessage.classList.add("off");
 }
 confirmButton.addEventListener("click", confirm);
 
@@ -53,7 +54,6 @@ confirmButton.addEventListener("click", confirm);
 function cancel() {
   modal.classList.add("off");
   failureMessage.classList.remove("off");
-  successMessage.classList.add("off");
 }
 cancelButton.addEventListener("click", cancel);
 
