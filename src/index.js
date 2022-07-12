@@ -19,15 +19,29 @@ const modal = document.querySelector("div.modal");
 //  A- HTML inside index.html
 //  B- The DOM's element.onclick attribute
 launchButton.onclick = function() {
-  console.log("Oh noes, what happened to the other event :(...");
+  // console.log("Oh noes, what happened to the other event :(...");
 }
 
 //  C- element.addEventListener('click', callback)
 launchButton.addEventListener("click", function(event) {
-  console.log(event);
+  // console.log(event);
 })
 
 // TODO use event.target to target a specific event if enough time!
+document.addEventListener("click", function(evt) {
+  if (evt.target === launchButton) {
+    // console.log("launch button clicked!");
+  } else {
+    // console.log("clicking somewhere else...");
+  }
+})
+
+Array.from(document.links).forEach(link => {
+  link.addEventListener("click", function(event) {
+    event.preventDefault();
+    console.log(`The ${event.target.textContent} link is not taking you annnnnnnnywhere!!!`);
+  })
+})
 
 // 👉 TASK 3- Create a function that launches!
 // It should open the confirmation modal.
@@ -71,6 +85,22 @@ document.addEventListener("keydown", escKey);
 // It should console.log the target 🎯 of the event.
 // It should also console.log the CURRENT target 🧭 of the event.
 // Play with stopPropagation and stopImmediatePropagation.
+
+document.querySelectorAll("*").forEach(el => el.addEventListener("click", event => {
+  console.log("Target:        ", event.target);
+  console.log("Current Target:", event.currentTarget);
+  console.log("\n");
+}))
+
+modal.addEventListener("click", e => {
+  console.log("YOU SHALL NOT PASS");
+  e.stopPropagation();
+})
+
+
+
+
+
 
 
 // 👉 TASK 8- [STRETCH] Create helper functions to make the code
