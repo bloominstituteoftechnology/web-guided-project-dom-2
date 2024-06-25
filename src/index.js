@@ -8,8 +8,8 @@ const confirmButton = document.querySelector('#confirmButton');
 const cancelButton = document.querySelector('#cancelButton');
 
 // B- MESSAGES
-const successMessage = null
-const failureMessage = null
+const successMessage = document.querySelector('h1.success');
+const failureMessage = document.querySelector('h1.failure');
 
 // C- MODAL
 const modal = null
