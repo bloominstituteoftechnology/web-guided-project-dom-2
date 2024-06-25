@@ -12,7 +12,7 @@ const successMessage = document.querySelector('h1.success');
 const failureMessage = document.querySelector('h1.failure');
 
 // C- MODAL
-const modal = null
+const modal = document.querySelector('div.modal');
 
 
 // 👉 TASK 2- Demo handling click events on button#launchButton, using:
